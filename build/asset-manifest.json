@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/shoaib_portfolio/static/css/main.4d8a970a.css",
+    "main.js": "/shoaib_portfolio/static/js/main.8607ca39.js",
+    "static/js/453.1407b060.chunk.js": "/shoaib_portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/ABHrealestate.avif": "/shoaib_portfolio/static/media/ABHrealestate.5c60522f22bf4b6cdf6e.avif",
+    "static/media/dubai.avif": "/shoaib_portfolio/static/media/dubai.a28bf0768c41eb0bad66.avif",
+    "static/media/home1.avif": "/shoaib_portfolio/static/media/home1.0ede44ed9c9ab640060c.avif",
+    "static/media/amaya.avif": "/shoaib_portfolio/static/media/amaya.f8be5296ded158ac747d.avif",
+    "static/media/crystalClear.avif": "/shoaib_portfolio/static/media/crystalClear.8d6408c7da942a4b2d0a.avif",
+    "static/media/royalMaison.avif": "/shoaib_portfolio/static/media/royalMaison.d571f0b6e8dc47d420ed.avif",
+    "static/media/whoweare.avif": "/shoaib_portfolio/static/media/whoweare.2ba0b8a4ec14c2a24b79.avif",
+    "static/media/whatwedo.avif": "/shoaib_portfolio/static/media/whatwedo.9af271744c033f12c05f.avif",
+    "static/media/antoniosignorini.avif": "/shoaib_portfolio/static/media/antoniosignorini.c81b35aad81f8d127c81.avif",
+    "static/media/whyChooseUs.avif": "/shoaib_portfolio/static/media/whyChooseUs.7b805405a6b9adc8fce9.avif",
+    "static/media/logo.png": "/shoaib_portfolio/static/media/logo.258018bb439654c40d0a.png",
+    "index.html": "/shoaib_portfolio/index.html",
+    "main.4d8a970a.css.map": "/shoaib_portfolio/static/css/main.4d8a970a.css.map",
+    "main.8607ca39.js.map": "/shoaib_portfolio/static/js/main.8607ca39.js.map",
+    "453.1407b060.chunk.js.map": "/shoaib_portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d8a970a.css",
+    "static/js/main.8607ca39.js"
+  ]
+}
