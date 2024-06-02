@@ -5,15 +5,11 @@ import "./typewriter.scss";
 
 export interface IRedoAnimTextProps {
   delay: number;
+  texts: string[]
 }
 
-export default function RedoAnimText({ delay }: IRedoAnimTextProps) {
+export default function RedoAnimText({ delay, texts }: IRedoAnimTextProps) {
   const textIndex = useMotionValue(0);
-  
-  const texts: string[] = [
-    "Digital Marketing Services.", "Copywriting Services.", "ICT Services", "Content Services."
-  ];
-
   const baseText = useTransform(textIndex, (latest) => texts[latest] || "");
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));

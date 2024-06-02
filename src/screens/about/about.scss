@@ -1,0 +1,31 @@
+.about-page {
+  .topbar {
+    position: relative;
+    color: white !important;
+    font-weight: bold !important;
+    font-size: xxx-large !important;
+    height: 60vh;
+
+    .topbar-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 60vh;
+      object-fit: cover;
+      z-index: auto;
+    }
+
+    .topbar-text {
+      position: relative;
+      z-index: 1;
+      background:rgba(0, 0, 0, .60);
+      height: 60vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "./static/css/main.4d8a970a.css",
-    "main.js": "./static/js/main.18f94b40.js",
+    "main.css": "./static/css/main.48e7780a.css",
+    "main.js": "./static/js/main.7f0b6fcb.js",
     "static/js/453.1407b060.chunk.js": "./static/js/453.1407b060.chunk.js",
     "static/media/ABHrealestate.avif": "./static/media/ABHrealestate.5c60522f22bf4b6cdf6e.avif",
+    "static/media/about2.webp": "./static/media/about2.2720b6d1926ae517106c.webp",
     "static/media/dubai.avif": "./static/media/dubai.a28bf0768c41eb0bad66.avif",
     "static/media/home1.avif": "./static/media/home1.0ede44ed9c9ab640060c.avif",
     "static/media/amaya.avif": "./static/media/amaya.f8be5296ded158ac747d.avif",
@@ -12,15 +13,16 @@
     "static/media/whoweare.avif": "./static/media/whoweare.2ba0b8a4ec14c2a24b79.avif",
     "static/media/whatwedo.avif": "./static/media/whatwedo.9af271744c033f12c05f.avif",
     "static/media/antoniosignorini.avif": "./static/media/antoniosignorini.c81b35aad81f8d127c81.avif",
+    "static/media/fullLogo.jpg": "./static/media/fullLogo.126151cbd46cf9a4f9c9.jpg",
     "static/media/whyChooseUs.avif": "./static/media/whyChooseUs.7b805405a6b9adc8fce9.avif",
-    "static/media/logo.png": "./static/media/logo.258018bb439654c40d0a.png",
+    "static/media/downArrow.svg": "./static/media/downArrow.917439bc3cd390daef2bc201bb22850c.svg",
     "index.html": "./index.html",
-    "main.4d8a970a.css.map": "./static/css/main.4d8a970a.css.map",
-    "main.18f94b40.js.map": "./static/js/main.18f94b40.js.map",
+    "main.48e7780a.css.map": "./static/css/main.48e7780a.css.map",
+    "main.7f0b6fcb.js.map": "./static/js/main.7f0b6fcb.js.map",
     "453.1407b060.chunk.js.map": "./static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d8a970a.css",
-    "static/js/main.18f94b40.js"
+    "static/css/main.48e7780a.css",
+    "static/js/main.7f0b6fcb.js"
   ]
 }

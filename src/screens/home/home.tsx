@@ -12,6 +12,10 @@ type HomeProps = {};
 
 const Home: React.FC<HomeProps> = () => {
 
+  const texts: string[] = [
+    "Digital Marketing Services.", "Copywriting Services.", "ICT Services", "Content Services."
+  ]
+
   return (
     <div className="home">
       <div className="first-home">
@@ -19,7 +23,7 @@ const Home: React.FC<HomeProps> = () => {
           <div className="main-text">
             Discover the universe of possibilities with our services.
           </div>
-          <Typewriter/>
+          <Typewriter texts={texts}/>
           <div className="secondary-text">
             Let our social media agency in Dubai take your online presence to
             the next level.
