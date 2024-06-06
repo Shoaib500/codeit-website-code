@@ -15,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About/>}/>
         </Routes>
+        <Footer/>
       </HashRouter>
     </div>
   );
