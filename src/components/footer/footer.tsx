@@ -21,8 +21,8 @@ const Footer: React.FC<FooterProps> = () => {
               offers.
             </div>
             <div className="email-box">
-              <input type="text" className="email-input" />
-              <div className="send-btn-wrapper">
+              <input type="text" className="email-input" placeholder="Enter your Email"/>
+              <div className="send-btn-wrapper" onClick={()=>{window.location.href = 'mailto:amankulwal27@gmail.com'}}>
                 <img src={send} alt="" className="send-btn"/>
               </div>
             </div>
@@ -75,14 +75,14 @@ const Footer: React.FC<FooterProps> = () => {
               <img src={call} alt="" className="mobile icon" />
               <div>Mobile/WhatsApp no.</div>
             </div>
-            <div className="mobile-text">+971-503899052</div>
+            <div className="mobile-text" onClick={()=>{window.location.href = 'tel:+917980978482'}}>+91 79809 78482</div>
           </div>
           <div className="email">
             <div className="first-row">
               <img src={mail} alt="" className="email icon" />
               <div>Email</div>
             </div>
-            <div className="email-text">info@codeit.world</div>
+            <div className="email-text" onClick={()=>{window.location.href = 'mailto:amankulwal27@gmail.com'}}>info@codeit.world</div>
           </div>
         </div>
       </div>

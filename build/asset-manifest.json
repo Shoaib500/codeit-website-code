@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.48e7780a.css",
-    "main.js": "./static/js/main.7f0b6fcb.js",
+    "main.css": "./static/css/main.9c60d7b5.css",
+    "main.js": "./static/js/main.a5dc03fe.js",
     "static/js/453.1407b060.chunk.js": "./static/js/453.1407b060.chunk.js",
     "static/media/ABHrealestate.avif": "./static/media/ABHrealestate.5c60522f22bf4b6cdf6e.avif",
     "static/media/about2.webp": "./static/media/about2.2720b6d1926ae517106c.webp",
@@ -15,14 +15,18 @@
     "static/media/antoniosignorini.avif": "./static/media/antoniosignorini.c81b35aad81f8d127c81.avif",
     "static/media/fullLogo.jpg": "./static/media/fullLogo.126151cbd46cf9a4f9c9.jpg",
     "static/media/whyChooseUs.avif": "./static/media/whyChooseUs.7b805405a6b9adc8fce9.avif",
+    "static/media/call.svg": "./static/media/call.c55e2c16e0169b64991e2e5328c2f5cf.svg",
     "static/media/downArrow.svg": "./static/media/downArrow.917439bc3cd390daef2bc201bb22850c.svg",
+    "static/media/location.svg": "./static/media/location.6b7c5ccaf98d5158f1600aa17615067a.svg",
+    "static/media/send.svg": "./static/media/send.e46c31df86748eb2c098e9c71dd95ff4.svg",
     "index.html": "./index.html",
-    "main.48e7780a.css.map": "./static/css/main.48e7780a.css.map",
-    "main.7f0b6fcb.js.map": "./static/js/main.7f0b6fcb.js.map",
+    "static/media/mail.svg": "./static/media/mail.83ce9f8f6f751fda65b292fe6e92715c.svg",
+    "main.9c60d7b5.css.map": "./static/css/main.9c60d7b5.css.map",
+    "main.a5dc03fe.js.map": "./static/js/main.a5dc03fe.js.map",
     "453.1407b060.chunk.js.map": "./static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48e7780a.css",
-    "static/js/main.7f0b6fcb.js"
+    "static/css/main.9c60d7b5.css",
+    "static/js/main.a5dc03fe.js"
   ]
 }
