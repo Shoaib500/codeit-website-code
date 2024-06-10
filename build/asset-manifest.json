@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.9c60d7b5.css",
-    "main.js": "./static/js/main.a5dc03fe.js",
+    "main.css": "./static/css/main.9f78bd30.css",
+    "main.js": "./static/js/main.81dbc380.js",
     "static/js/453.1407b060.chunk.js": "./static/js/453.1407b060.chunk.js",
     "static/media/ABHrealestate.avif": "./static/media/ABHrealestate.5c60522f22bf4b6cdf6e.avif",
     "static/media/about2.webp": "./static/media/about2.2720b6d1926ae517106c.webp",
     "static/media/dubai.avif": "./static/media/dubai.a28bf0768c41eb0bad66.avif",
     "static/media/home1.avif": "./static/media/home1.0ede44ed9c9ab640060c.avif",
     "static/media/amaya.avif": "./static/media/amaya.f8be5296ded158ac747d.avif",
+    "static/media/visionImg.avif": "./static/media/visionImg.369cfcdd7395ee4e0453.avif",
     "static/media/crystalClear.avif": "./static/media/crystalClear.8d6408c7da942a4b2d0a.avif",
+    "static/media/missonImg.avif": "./static/media/missonImg.8bb9613a27a0c5bbe6ad.avif",
     "static/media/royalMaison.avif": "./static/media/royalMaison.d571f0b6e8dc47d420ed.avif",
     "static/media/whoweare.avif": "./static/media/whoweare.2ba0b8a4ec14c2a24b79.avif",
     "static/media/whatwedo.avif": "./static/media/whatwedo.9af271744c033f12c05f.avif",
@@ -21,12 +23,12 @@
     "static/media/send.svg": "./static/media/send.e46c31df86748eb2c098e9c71dd95ff4.svg",
     "index.html": "./index.html",
     "static/media/mail.svg": "./static/media/mail.83ce9f8f6f751fda65b292fe6e92715c.svg",
-    "main.9c60d7b5.css.map": "./static/css/main.9c60d7b5.css.map",
-    "main.a5dc03fe.js.map": "./static/js/main.a5dc03fe.js.map",
+    "main.9f78bd30.css.map": "./static/css/main.9f78bd30.css.map",
+    "main.81dbc380.js.map": "./static/js/main.81dbc380.js.map",
     "453.1407b060.chunk.js.map": "./static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c60d7b5.css",
-    "static/js/main.a5dc03fe.js"
+    "static/css/main.9f78bd30.css",
+    "static/js/main.81dbc380.js"
   ]
 }
