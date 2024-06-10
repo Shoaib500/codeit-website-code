@@ -11,7 +11,7 @@ const WhatWeDo: React.FC<WhatWeDoProps> = () => {
         <div className="wwa-title">What We Do</div>
         <div className="wwa-sub-title">Experience Digital Excellence</div>
         <div className="wwa-text">
-          At Mighty Warners, we're passionate about delivering top-notch digital
+          At CodeIt, we're passionate about delivering top-notch digital
           marketing and ICT services to businesses of all sizes.
         </div>
         <div className="wwa-text">

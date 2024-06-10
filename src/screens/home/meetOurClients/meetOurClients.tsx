@@ -15,6 +15,7 @@ type Client = {
     name: string
     service: string
     img: string
+    link: string
 }
 
 const MeetOurClients:React.FC<MeetOurClientsProps> = () => {
@@ -23,32 +24,38 @@ const MeetOurClients:React.FC<MeetOurClientsProps> = () => {
         {
             name: "AL Amaya",
             service: "Web Application",
-            img: amaya
+            img: amaya,
+            link: "https://alamaya.ae/"
         },
         {
             name: "Crystal Clear",
             service: "Web Application",
-            img: crystal
+            img: crystal,
+            link: "https://crystalclearwatersports.com/"
         },
         {
             name: "Alltourism Dubai",
             service: "Web Application",
-            img: dubai
+            img: dubai,
+            link: "https://www.codeit.world/"
         },
         {
             name: "Royal Maison",
             service: "E-Commerce Website",
-            img: royalMaison
+            img: royalMaison,
+            link: "https://royal-maison.com/"
         },
         {
             name: "Antoniosignorini",
             service: "Web Application",
-            img: antoni
+            img: antoni,
+            link: "https://www.antoniosignorini.com/"
         },
         {
             name: "ABH Real Estate",
             service: "Real Estate Website",
-            img: ABH
+            img: ABH,
+            link: "https://www.abhomeqatar.com/"
         },
     ]
     
@@ -58,7 +65,7 @@ const MeetOurClients:React.FC<MeetOurClientsProps> = () => {
         <div className="clients">
             {clients.map((client) => 
                 <div className='client-card'>
-                    <img className='client-img' src={client.img} alt="" />
+                    <img className='client-img' src={client.img} alt="" onClick={()=>{window.open(client.link)}}/>
                     <div className="client-name">{client.name}</div>
                     <div className="client-service">{client.service}</div>
                 </div>
