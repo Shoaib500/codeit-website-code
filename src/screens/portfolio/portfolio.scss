@@ -1,0 +1,100 @@
+.portfolio {
+  .portfolio-collage-img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+
+  .buttons {
+    background-color: #f3f3f3;
+    height: 80px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 21px;
+
+    .button {
+      width: 18%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: #fff solid 1px;
+      cursor: pointer;
+
+      &:hover,
+      &.active {
+        background-color: #961128;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 15px;
+
+    .client-card {
+      border: 12px rgba(173, 173, 173, 0.433) solid;
+      margin: 20px 10px;
+      position: relative;
+      height: 270px;
+      width: 28vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .client-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .black-layer {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.514);
+        z-index: 5;
+      }
+
+      .client-details {
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.751);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+        padding: 20px 15px;
+        border: 1px black solid;
+        color: white;
+        position: absolute;
+        z-index: 10;
+
+        .client-name{
+            font-size: 24px;
+            font-weight: 400;
+            padding: 10px 0;
+        }
+
+        .client-category{
+            font-size: 18px;
+        }
+      }
+    }
+  }
+}

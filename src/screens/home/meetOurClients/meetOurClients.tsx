@@ -6,6 +6,7 @@ import dubai from '../../../assets/clients/dubai.avif'
 import royalMaison from '../../../assets/clients/royalMaison.avif'
 import antoni from '../../../assets/clients/antoniosignorini.avif'
 import ABH from '../../../assets/clients/ABHrealestate.avif'
+import { useNavigate } from 'react-router-dom';
 
 type MeetOurClientsProps = {
     
@@ -19,6 +20,8 @@ type Client = {
 }
 
 const MeetOurClients:React.FC<MeetOurClientsProps> = () => {
+
+    const navigate = useNavigate();
 
     const clients: Client[] = [
         {
@@ -58,6 +61,8 @@ const MeetOurClients:React.FC<MeetOurClientsProps> = () => {
             link: "https://www.abhomeqatar.com/"
         },
     ]
+
+    
     
     return <div className='moc'>
         <div className="moc-title">Meet Our Clients</div>
@@ -71,7 +76,7 @@ const MeetOurClients:React.FC<MeetOurClientsProps> = () => {
                 </div>
             )}
         </div>
-        <div className='browse-portfolios-btn'>Browse all Portfolios</div>
+        <div className='browse-portfolios-btn' onClick={()=>{navigate('/portfolio')}}>Browse all Portfolios</div>
     </div>
 }
 export default MeetOurClients;
