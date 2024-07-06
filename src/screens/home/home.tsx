@@ -7,6 +7,7 @@ import WhoWeAre from "./whoWeAre/whoWeAre";
 import WhatWeDo from "./whatWeDo/whatWeDo";
 import WhyChooseUs from "./whyChooseUs/whyChooseUs";
 import MeetOurClients from "./meetOurClients/meetOurClients";
+import Testimony from "./testimony/testimony";
 
 type HomeProps = {};
 
@@ -42,6 +43,8 @@ const Home: React.FC<HomeProps> = () => {
       <WhyChooseUs/>
 
       <MeetOurClients/>
+
+      <Testimony />
     </div>
   );
 };
