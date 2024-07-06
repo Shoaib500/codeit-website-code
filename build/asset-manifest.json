@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.3ea846e8.css",
-    "main.js": "./static/js/main.7c369326.js",
+    "main.css": "./static/css/main.b910ac2b.css",
+    "main.js": "./static/js/main.f6b7c4b6.js",
     "static/js/453.ace21015.chunk.js": "./static/js/453.ace21015.chunk.js",
     "static/media/Hospitality.jpg": "./static/media/Hospitality.feed97ec58e9366a54de.jpg",
     "static/media/luxuryAkar.webp": "./static/media/luxuryAkar.d4b002c45865c51231ed.webp",
@@ -72,23 +72,27 @@
     "static/media/whoweare.avif": "./static/media/whoweare.2ba0b8a4ec14c2a24b79.avif",
     "static/media/stirlingls.webp": "./static/media/stirlingls.41abd302ab10e5071f40.webp",
     "static/media/whatwedo.avif": "./static/media/whatwedo.9af271744c033f12c05f.avif",
+    "static/media/linda-paradise-logo.png": "./static/media/linda-paradise-logo.f9d2b2131cbca79a0f70.png",
     "static/media/71structureAlart.webp": "./static/media/71structureAlart.284e5d3f59249597272a.webp",
     "static/media/theodoronline.webp": "./static/media/theodoronline.5e3464bab5313914a65a.webp",
     "static/media/antoniosignorini.avif": "./static/media/antoniosignorini.c81b35aad81f8d127c81.avif",
     "static/media/fullLogo.jpg": "./static/media/fullLogo.126151cbd46cf9a4f9c9.jpg",
     "static/media/whyChooseUs.avif": "./static/media/whyChooseUs.7b805405a6b9adc8fce9.avif",
-    "static/media/call.svg": "./static/media/call.c55e2c16e0169b64991e2e5328c2f5cf.svg",
+    "static/media/Logo-07.webp": "./static/media/Logo-07.01e12a075b86c38a7e6f.webp",
+    "static/media/call.svg": "./static/media/call.bf18e92feda2dd0fc8fea9571a12f7e2.svg",
     "static/media/downArrow.svg": "./static/media/downArrow.917439bc3cd390daef2bc201bb22850c.svg",
-    "static/media/location.svg": "./static/media/location.6b7c5ccaf98d5158f1600aa17615067a.svg",
-    "static/media/send.svg": "./static/media/send.e46c31df86748eb2c098e9c71dd95ff4.svg",
+    "static/media/red-logo.webp": "./static/media/red-logo.c46b11f5e1acab75f2ae.webp",
+    "static/media/location.svg": "./static/media/location.9edde65096bae7bcda43f69987fa92d6.svg",
+    "static/media/send.svg": "./static/media/send.7d9ab03ffc62084f8b02b695eb393bdb.svg",
     "index.html": "./index.html",
-    "static/media/mail.svg": "./static/media/mail.83ce9f8f6f751fda65b292fe6e92715c.svg",
-    "main.3ea846e8.css.map": "./static/css/main.3ea846e8.css.map",
-    "main.7c369326.js.map": "./static/js/main.7c369326.js.map",
+    "static/media/mail.svg": "./static/media/mail.65520679221cf5451fa0c031fd1e815a.svg",
+    "static/media/star-solid.svg": "./static/media/star-solid.9efa28b188c5a076f04790110c75f623.svg",
+    "main.b910ac2b.css.map": "./static/css/main.b910ac2b.css.map",
+    "main.f6b7c4b6.js.map": "./static/js/main.f6b7c4b6.js.map",
     "453.ace21015.chunk.js.map": "./static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ea846e8.css",
-    "static/js/main.7c369326.js"
+    "static/css/main.b910ac2b.css",
+    "static/js/main.f6b7c4b6.js"
   ]
 }
