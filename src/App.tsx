@@ -6,11 +6,13 @@ import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 import About from "./screens/about/about";
 import Portfolio from "./screens/portfolio/portfolio";
+import ScrollToTop from "./components/scrollToTop/scrollToTop";
 
 function App() {
   return (
     <div className="App">
       <HashRouter>
+      <ScrollToTop/>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
