@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.b910ac2b.css",
-    "main.js": "./static/js/main.f6b7c4b6.js",
+    "main.css": "./static/css/main.e3d78bc4.css",
+    "main.js": "./static/js/main.2bb1f8d3.js",
     "static/js/453.ace21015.chunk.js": "./static/js/453.ace21015.chunk.js",
     "static/media/Hospitality.jpg": "./static/media/Hospitality.feed97ec58e9366a54de.jpg",
     "static/media/luxuryAkar.webp": "./static/media/luxuryAkar.d4b002c45865c51231ed.webp",
@@ -49,6 +49,7 @@
     "static/media/ABHrealestate.avif": "./static/media/ABHrealestate.5c60522f22bf4b6cdf6e.avif",
     "static/media/theqabea.webp": "./static/media/theqabea.82616b8dc63334e77fea.webp",
     "static/media/quintessential4media.webp": "./static/media/quintessential4media.1ad77267d276594a604f.webp",
+    "static/media/Bg-Img.webp": "./static/media/Bg-Img.4eb96b1d33f5db904b4c.webp",
     "static/media/about2.webp": "./static/media/about2.2720b6d1926ae517106c.webp",
     "static/media/dubai.avif": "./static/media/dubai.a28bf0768c41eb0bad66.avif",
     "static/media/federategroup.webp": "./static/media/federategroup.abc1b25f9aec7cc7f495.webp",
@@ -87,12 +88,12 @@
     "index.html": "./index.html",
     "static/media/mail.svg": "./static/media/mail.65520679221cf5451fa0c031fd1e815a.svg",
     "static/media/star-solid.svg": "./static/media/star-solid.9efa28b188c5a076f04790110c75f623.svg",
-    "main.b910ac2b.css.map": "./static/css/main.b910ac2b.css.map",
-    "main.f6b7c4b6.js.map": "./static/js/main.f6b7c4b6.js.map",
+    "main.e3d78bc4.css.map": "./static/css/main.e3d78bc4.css.map",
+    "main.2bb1f8d3.js.map": "./static/js/main.2bb1f8d3.js.map",
     "453.ace21015.chunk.js.map": "./static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b910ac2b.css",
-    "static/js/main.f6b7c4b6.js"
+    "static/css/main.e3d78bc4.css",
+    "static/js/main.2bb1f8d3.js"
   ]
 }
