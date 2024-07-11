@@ -46,8 +46,8 @@ const About: React.FC<AboutProps> = () => {
         <div className="mission info">
           <div className="title">Our Mission</div>
           <div className="text">
-            At Mighty Warners, we're on a mission to transform the way
-            businesses work in UAE and approach digital marketing. Our team of
+            At Code It, we're on a mission to transform the way
+            businesses work in India and approach digital marketing. Our team of
             experts is dedicated to deliver game-changing solutions that help
             businesses drive leads, increase sales and build lasting customer
             loyalty.
@@ -67,7 +67,7 @@ const About: React.FC<AboutProps> = () => {
           </div>
           <div className="text">
             Whether you're looking to expand your reach, boost your online
-            presence or generate more leads and sales, Mighty Warners has the
+            presence or generate more leads and sales, Code It has the
             expertise and passion to help you achieve your goals.
           </div>
         </div>
@@ -79,7 +79,7 @@ const About: React.FC<AboutProps> = () => {
         <div className="vision info">
           <div className="title">Our Vision</div>
           <div className="text">
-            We aim to be the leading digital marketing agency in UAE and beyond,
+            We aim to be the leading digital marketing agency in India and beyond,
             recognized for our innovative solutions, exceptional customer
             service and unwavering commitment to helping businesses succeed.
           </div>

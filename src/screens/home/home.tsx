@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.scss";
-import home1 from "../../assets/images/home1.avif";
+import teacher1 from "../../assets/images/teacher1.png";
 import Typewriter from "../../components/typewriter/typewriter";
 import ExploreServices from "./exploreServices/exploreServices";
 import WhoWeAre from "./whoWeAre/whoWeAre";
@@ -26,12 +26,12 @@ const Home: React.FC<HomeProps> = () => {
           </div>
           <Typewriter texts={texts}/>
           <div className="secondary-text">
-            Let our social media agency in Dubai take your online presence to
+            Let our social media agency in Mumbai take your online presence to
             the next level.
           </div>
         </div>
 
-        <img src={home1} className="home1" alt="" />
+        <img src={teacher1} className="teacher1" alt="" />
       </div>
 
       <ExploreServices/>
@@ -44,7 +44,7 @@ const Home: React.FC<HomeProps> = () => {
 
       <MeetOurClients/>
 
-      <Testimony />
+      {/* <Testimony /> */}
     </div>
   );
 };

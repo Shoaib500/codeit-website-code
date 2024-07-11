@@ -80,7 +80,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             }`}
             onClick={() => {
               setActiveTab("portfolio");
-              navigate("/portfolio")
+              navigate("#")
             }}
           >
             Portfolio

@@ -15,7 +15,7 @@ const WhoWeAre: React.FC<WhoWeAreProps> = () => {
         </div>
         <div className="wwa-text">
           For the past ten years, we've dedicated ourselves to provide top-notch
-          IT solutions and digital analytics to our clients in Dubai. We've
+          IT solutions and digital analytics to our clients in India. We've
           poured our heart and soul into overcoming every challenge that has
           come our way, and we've always come out on top. From the moment we
           started on July 15th, 2014, our goal has remained the same: to

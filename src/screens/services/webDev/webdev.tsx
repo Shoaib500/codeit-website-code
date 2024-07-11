@@ -100,30 +100,30 @@ const webdev = () => {
 
                   <div className="formInputDiv">
                     <div className="formInput">
-                      {/* <select name="selectservice">
-                        <option name="selectservice" value="select">
+                      <select name="selectservice" id="serviceOpt">
+                        <option value="select">
                           Choose The Service You Are Interested In*
                         </option>
-                        <option name="selectservice" value="B2B">
-                          B2B
+                        <option value="B2B">
+                          A
                         </option>
-                        <option name="selectservice" value="B2C">
-                          B2C
+                        <option value="B2C">
+                          B
                         </option>
-                        <option name="selectservice" value="C2C">
-                          C2C
+                        <option value="C2C">
+                          C
                         </option>
-                        <option name="selectservice" value="Other">
+                        <option value="Other">
                           Other
                         </option>
-                      </select> */}
+                      </select>
 
-                      <input
+                      {/* <input
                         type="text"
                         name="company"
                         placeholder="Service"
                         required
-                      />
+                      /> */}
                     </div>
                   </div>
 

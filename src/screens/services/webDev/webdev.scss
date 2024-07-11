@@ -175,6 +175,19 @@
                     outline: none;
                     color: #000;
                     font-size: 16px;
+
+                    &placeholder{
+                      color: #9f9797;
+                    }
+                  }
+                  
+
+                  select  {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    color: #9f9797;
+                    font-size: 16px;
                   }
                 }
               }

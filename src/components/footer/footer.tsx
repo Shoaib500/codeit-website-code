@@ -66,8 +66,11 @@ const Footer: React.FC<FooterProps> = () => {
               <div>Address</div>
             </div>
             <div className="address-text">
-              Office #1007 - 10th Floor DAMAC XL Tower, Marasi Drive, Business
-              Bay - Dubai, UAE.
+            303, W35, Lodha Amara,
+            <br />
+             Thane West, Mumbai,
+             <br /> 
+             Maharashtra, India
             </div>
           </div>
           <div className="mobile">
@@ -87,7 +90,7 @@ const Footer: React.FC<FooterProps> = () => {
         </div>
       </div>
       <div className="bottom-part">
-        Copyright © 2024 Mighty Warners Technology L.L.C | All Rights Reserved.
+        Copyright © 2024 Codeit pvt. ltd. | All Rights Reserved.
       </div>
     </div>
   );

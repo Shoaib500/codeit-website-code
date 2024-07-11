@@ -67,7 +67,7 @@ const MeetOurClients:React.FC<MeetOurClientsProps> = () => {
     return <div className='moc'>
         <div className="moc-title">Meet Our Clients</div>
         <div className="moc-sub-title">Take a peek at our happy customers and join their ranks.</div>
-        <div className="clients">
+        {/* <div className="clients">
             {clients.map((client) => 
                 <div className='client-card'>
                     <img className='client-img' src={client.img} alt="" onClick={()=>{window.open(client.link)}}/>
@@ -75,8 +75,9 @@ const MeetOurClients:React.FC<MeetOurClientsProps> = () => {
                     <div className="client-service">{client.service}</div>
                 </div>
             )}
-        </div>
-        <div className='browse-portfolios-btn' onClick={()=>{navigate('/portfolio')}}>Browse all Portfolios</div>
+        </div> */}
+        <div className='browse-portfolios-btn'>Browse all Portfolios</div>
+        {/* <div className='browse-portfolios-btn' onClick={()=>{navigate('/portfolio')}}>Browse all Portfolios</div> */}
     </div>
 }
 export default MeetOurClients;
