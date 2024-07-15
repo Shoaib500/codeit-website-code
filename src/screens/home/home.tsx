@@ -12,37 +12,43 @@ import Testimony from "./testimony/testimony";
 type HomeProps = {};
 
 const Home: React.FC<HomeProps> = () => {
-
   const texts: string[] = [
-    "Digital Marketing Services.", "Copywriting Services.", "ICT Services", "Content Services."
-  ]
+    "Digital Marketing Services.",
+    "Copywriting Services.",
+    "ICT Services",
+    "Content Services.",
+  ];
 
   return (
     <div className="home">
       <div className="first-home">
-        <div className="texts">
-          <div className="main-text">
-            Discover the universe of possibilities with our services.
+        <div className="first-home-banner">
+          <div className="texts">
+            <div className="main-text">
+              Discover the universe of possibilities {/* <br /> */}with our services.
+            </div>
+            <Typewriter texts={texts} />
+            <div className="secondary-text">
+              Let our social media agency in Mumbai take your online presence to
+              the next level.
+            </div>
           </div>
-          <Typewriter texts={texts}/>
-          <div className="secondary-text">
-            Let our social media agency in Mumbai take your online presence to
-            the next level.
+
+          <div className="banner-icon-img">
+            <img src={teacher1} className="teacher1" alt="" />
           </div>
         </div>
-
-        <img src={teacher1} className="teacher1" alt="" />
       </div>
 
-      <ExploreServices/>
+      <ExploreServices />
 
-      <WhoWeAre/>
+      <WhoWeAre />
 
-      <WhatWeDo/>
-      
-      <WhyChooseUs/>
+      <WhatWeDo />
 
-      <MeetOurClients/>
+      <WhyChooseUs />
+
+      <MeetOurClients />
 
       {/* <Testimony /> */}
     </div>

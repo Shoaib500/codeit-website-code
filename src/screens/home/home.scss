@@ -2,47 +2,113 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   .first-home {
     background-color: #a7d8e6;
-    height: calc(100vh - 70px);
-    // width: calc(100% - 80px);
+    max-height: 700px;
+    padding-top: 80px;
     width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    // padding: 40px;
+    // position: relative;
 
-    .teacher1 {
-      position: absolute;
-      bottom: 0;
-      right: 30px;
-      height: 90%;
-    }
+    .first-home-banner {
+      background-color: #a7d8e6;
+      max-width: 1420px;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      overflow: hidden;
 
-    .texts {
-      width: 60%;
-      flex-wrap: wrap;
-      text-align: left;
-      position: absolute;
-      top: 30%;
-      left: 8%;
-
-      .main-text {
-        font-size: xxx-large;
-        font-weight: bold;
-      }
-
-      .changing-text {
-        margin: 10px 0px;
-        width: 60%;
-      }
-
-      .secondary-text {
+      .banner-icon-img {
         width: 40%;
-        font-size: larger;
+
+        .teacher1 {
+          width: 100%;
+          position: relative;
+          bottom: -5px;
+        }
+      }
+
+      .texts {
+        width: calc(60% - 40px);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
+
+        .main-text {
+          font-size: xxx-large;
+          font-weight: bold;
+        }
+
+        .changing-text {
+          margin: 10px 0px;
+          width: 60%;
+        }
+
+        .secondary-text {
+          width: 40%;
+          font-size: larger;
+        }
+      }
+    }
+  }
+
+
+  // for width < 1440px
+  @media (max-width : 1440px) {
+    .first-home {
+      max-height: 500px;
+  
+      .first-home-banner {
+        max-width: 1020px;
+  
+        .banner-icon-img {
+          width: 45%;
+        }
+  
+        .texts {
+          width: calc(55% - 40px);
+        }
+      }
+    }
+  }
+
+  // for width < 1040px
+  @media (max-width : 1040px) {
+    .first-home {
+      min-height: 800px;
+      max-height: 1040px;
+      width: 100%;
+  
+      .first-home-banner {
+        flex-direction: column;
+        gap: 40px;
+        padding-inline: 40px;
+  
+        .banner-icon-img {
+          --img-size-1 : 500px;
+          height: var(--img-size-1);
+          width: var(--img-size-1);
+          margin: auto;
+  
+          .teacher1 {
+            height: 100%;
+            width: auto;
+          }
+        }
+  
+        .texts {
+          width: calc(100% - 80px);
+          height: 25%;
+          flex-wrap: wrap;
+          text-align: left;
+          position: relative;
+          top: 25%;
+          left: 40px;
+        }
       }
     }
   }

@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import "./navbar.scss";
 import logo from "../../assets/logos/fullLogo.jpg";
 import downArrow from "../../assets/icons/downArrow.svg";
+import Menu from "../../assets/icons/hamburger.svg";
+import Close from "../../assets/icons/close.svg";
 import { useNavigate } from "react-router-dom";
 
 type NavbarProps = {};
 
 const Navbar: React.FC<NavbarProps> = () => {
   const [activeTab, setActiveTab] = useState<string>("home");
-  const [showMenu, setShowMenu] = useState<boolean>(false)
+  const [showMenu, setShowMenu] = useState<boolean>(false);
   const navigate = useNavigate();
-
-
 
   return (
     <div className="navbar">
@@ -26,8 +26,26 @@ const Navbar: React.FC<NavbarProps> = () => {
           }}
         />
       </div>
+
+      {/* mid */}
       <div className="mid">
         <div className="nav-elements">
+          <div className="close-btn">
+            <img src={Close} alt="" />
+          </div>
+
+          <div
+            className={`nav-element ${
+              activeTab === "home" ? "active" : ""
+            }`}
+            onClick={() => {
+              setActiveTab("home");
+              navigate("/");
+            }}
+          >
+            Home
+          </div>
+
           <div
             className={`nav-element ${
               activeTab === "about-us" ? "active" : ""
@@ -40,7 +58,15 @@ const Navbar: React.FC<NavbarProps> = () => {
             About Us
           </div>
 
-          <div className="dropdown-wrapper" onMouseEnter={()=>{setShowMenu(true)}} onMouseLeave={()=>{setShowMenu(false)}}>
+          <div
+            className="dropdown-wrapper"
+            onMouseEnter={() => {
+              setShowMenu(true);
+            }}
+            onMouseLeave={() => {
+              setShowMenu(false);
+            }}
+          >
             <div className={`nav-elem-wrapper`}>
               <div
                 className={`nav-element ${
@@ -54,7 +80,7 @@ const Navbar: React.FC<NavbarProps> = () => {
               </div>
               <img className="arrow" src={downArrow} alt="" />
             </div>
-{/* 
+            {/* 
             <div className={`dropdown-menu ${showMenu ? "show" : ""}`}>
                 <div className="header">
                     <div className="title">Design & Development</div>
@@ -80,7 +106,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             }`}
             onClick={() => {
               setActiveTab("portfolio");
-              navigate("#")
+              navigate("#");
             }}
           >
             Portfolio
@@ -95,8 +121,15 @@ const Navbar: React.FC<NavbarProps> = () => {
           </div>
         </div>
       </div>
+
+      {/* right */}
       <div className="right">
         <div className="speak-to-expert-btn">Speak to an Expert</div>
+      </div>
+
+      {/* hamburger */}
+      <div className="menu">
+        <img className="menu-btn" src={Menu} onClick={() => {}} alt="" />
       </div>
     </div>
   );
