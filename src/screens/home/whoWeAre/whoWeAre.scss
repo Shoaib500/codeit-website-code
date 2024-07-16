@@ -1,3 +1,57 @@
+// for width < 1440px
+@media (max-width : 1440px) {
+    .who-we-are{
+        margin-block: 20px 60px;
+
+
+        .wwa-img{
+            max-width: 50%;
+            border-radius: 15px;
+        }
+    
+        .wwa-right-content{
+    
+            .wwa-text{
+                font-size: large;
+                text-align: left;
+                line-height: 1.5;
+            }
+
+            .wwa-btn{
+                display: none;
+            }
+        }
+    }
+}
+
+
+// for width < 1040px
+@media (max-width : 1040px) {
+    .who-we-are{
+        margin-block: 20px 60px;
+
+        .wwa-img{
+            display: none;
+        }
+    
+        .wwa-right-content{
+            margin-left: 0px !important;
+
+    
+            .wwa-text{
+                font-size: large;
+                text-align: left;
+                line-height: 1.5;
+            }
+
+            .wwa-btn{
+                display: none;
+            }
+        }
+
+    }
+}
+
 .who-we-are{
     display: flex;
     justify-content: center;
@@ -20,7 +74,7 @@
 
     .wwa-right-content{
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         gap: 20px;
         align-items: flex-start;
         margin-left: 30px;
@@ -70,3 +124,4 @@
         }
     }
 }
+

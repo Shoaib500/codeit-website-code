@@ -31,7 +31,8 @@
       }
 
       .texts {
-        width: calc(60% - 40px);
+        width: calc(55% - 40px);
+        margin-left: 5%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -70,7 +71,13 @@
         }
   
         .texts {
-          width: calc(55% - 40px);
+          width: calc(50% - 40px);
+          margin-left: 5%;
+
+          .main-text {
+            font-size: xx-large;
+            font-weight: bold;
+          }
         }
       }
     }
@@ -79,8 +86,8 @@
   // for width < 1040px
   @media (max-width : 1040px) {
     .first-home {
-      min-height: 800px;
-      max-height: 1040px;
+      min-height: 750px;
+      max-height: 100vh;
       width: 100%;
   
       .first-home-banner {
@@ -93,10 +100,13 @@
           height: var(--img-size-1);
           width: var(--img-size-1);
           margin: auto;
+
+          position: relative;
+          bottom: 0;
   
           .teacher1 {
             height: 100%;
-            width: auto;
+            width: 100%;
           }
         }
   
@@ -104,10 +114,16 @@
           width: calc(100% - 80px);
           height: 25%;
           flex-wrap: wrap;
-          text-align: left;
+          text-align: center;
           position: relative;
           top: 25%;
           left: 40px;
+
+          .secondary-text {
+            margin-inline: auto;
+            width: 40%;
+            font-size: larger;
+          }
         }
       }
     }

@@ -11,6 +11,7 @@ type NavbarProps = {};
 const Navbar: React.FC<NavbarProps> = () => {
   const [activeTab, setActiveTab] = useState<string>("home");
   const [showMenu, setShowMenu] = useState<boolean>(false);
+  const [openMenu, setOpenMenu] = useState<boolean>(false);
   const navigate = useNavigate();
 
   return (
@@ -28,19 +29,26 @@ const Navbar: React.FC<NavbarProps> = () => {
       </div>
 
       {/* mid */}
-      <div className="mid">
+      <div className={`mid ${openMenu === false ? "hideMenu" : ""}`}>
         <div className="nav-elements">
+
+          {/* close */}
           <div className="close-btn">
-            <img src={Close} alt="" />
+            <img
+              src={Close}
+              onClick={() => {
+                setOpenMenu(false);
+              }}
+              alt=""
+            />
           </div>
 
           <div
-            className={`nav-element ${
-              activeTab === "home" ? "active" : ""
-            }`}
+            className={`nav-element ${activeTab === "home" ? "active" : ""}`}
             onClick={() => {
               setActiveTab("home");
               navigate("/");
+              setOpenMenu(false);
             }}
           >
             Home
@@ -53,6 +61,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             onClick={() => {
               setActiveTab("about-us");
               navigate("/about-us");
+              setOpenMenu(false);
             }}
           >
             About Us
@@ -60,6 +69,9 @@ const Navbar: React.FC<NavbarProps> = () => {
 
           <div
             className="dropdown-wrapper"
+            onClick={() => {
+              setOpenMenu(false);
+            }}
             onMouseEnter={() => {
               setShowMenu(true);
             }}
@@ -96,6 +108,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             }`}
             onClick={() => {
               setActiveTab("contact-us");
+              setOpenMenu(false);
             }}
           >
             Contact Us
@@ -115,6 +128,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             className={`nav-element ${activeTab === "blog" ? "active" : ""}`}
             onClick={() => {
               setActiveTab("blog");
+              setOpenMenu(false);
             }}
           >
             Blog
@@ -129,7 +143,14 @@ const Navbar: React.FC<NavbarProps> = () => {
 
       {/* hamburger */}
       <div className="menu">
-        <img className="menu-btn" src={Menu} onClick={() => {}} alt="" />
+        <img
+          className="menu-btn"
+          src={Menu}
+          onClick={() => {
+            setOpenMenu(true);
+          }}
+          alt=""
+        />
       </div>
     </div>
   );

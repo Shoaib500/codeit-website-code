@@ -1,6 +1,6 @@
 import React from "react";
 import whatWeDo from "../../../assets/images/whatwedo.avif";
-import './whatWeDo.scss'
+import "./whatWeDo.scss";
 
 type WhatWeDoProps = {};
 

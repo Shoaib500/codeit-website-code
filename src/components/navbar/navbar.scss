@@ -108,14 +108,18 @@
   .navbar {
     justify-content: space-between;
 
+
+
     .mid {
-      display: none;
-      position: fixed;
+      // display: none;
+      position: absolute;
       top: 0;
       left: 0;
       z-index: 10;
+      transform: translateX(0%);
+      transition: 0.5s;
 
-      background: #00000050;
+      background: #00000025;
       width: 100vw;
       height: 100vh;
       padding: 0;
@@ -134,7 +138,7 @@
 
         position: relative;
         top: 0;
-        left: 0;
+
 
         .close-btn{
           display: block;
@@ -199,6 +203,15 @@
           }
         }
       }
+    }
+
+    .hideMenu{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      transform: translateX(-100%);
+      transition: 0.5s;
     }
 
     .right {
