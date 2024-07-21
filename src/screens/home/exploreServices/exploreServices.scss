@@ -71,4 +71,74 @@
       }
     }
   }
+
+  // for width < 640px
+  @media (max-width : 640px) {
+    .services-cards {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+  
+      .explore-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        height: 150px;
+        margin: 20px;
+        border-radius: 20px;
+        border: 1px solid grey;
+        gap: 10px;
+  
+        .service-icon {
+          height: 50px;
+        }
+  
+        .service-name {
+          font-weight: bold;
+          font-size: large;
+          color: rgb(52, 52, 52);
+        }
+  
+        &:hover {
+          cursor: pointer;
+          border: none;
+          animation: both 0.5s cardAnimation;
+  
+          &.web {
+            background-color: #b185f0;
+          }
+  
+          &.app {
+            background-color: #f68567;
+          }
+  
+          &.dms {
+            background-color: #84bcf9;
+          }
+  
+          &.brandMarketing {
+            background-color: #7d94f7;
+          }
+  
+          &.contentWriting {
+            background-color: #F5808B;
+          }
+        }
+  
+        @keyframes cardAnimation {
+          0%{
+              transform: translateY(0) translateX(0);
+          }
+          100%{
+              transform: translateY(-10px) translateX(5px);
+          }
+        }
+      }
+    }
+  }
 }

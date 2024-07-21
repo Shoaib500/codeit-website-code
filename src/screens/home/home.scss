@@ -57,19 +57,18 @@
     }
   }
 
-
   // for width < 1440px
-  @media (max-width : 1440px) {
+  @media (max-width: 1440px) {
     .first-home {
       max-height: 500px;
-  
+
       .first-home-banner {
         max-width: 1020px;
-  
+
         .banner-icon-img {
           width: 45%;
         }
-  
+
         .texts {
           width: calc(50% - 40px);
           margin-left: 5%;
@@ -84,32 +83,32 @@
   }
 
   // for width < 1040px
-  @media (max-width : 1040px) {
+  @media (max-width: 1040px) {
     .first-home {
       min-height: 750px;
       max-height: 100vh;
       width: 100%;
-  
+
       .first-home-banner {
         flex-direction: column;
         gap: 40px;
         padding-inline: 40px;
-  
+
         .banner-icon-img {
-          --img-size-1 : 500px;
+          --img-size-1: 500px;
           height: var(--img-size-1);
           width: var(--img-size-1);
           margin: auto;
 
           position: relative;
           bottom: 0;
-  
+
           .teacher1 {
             height: 100%;
             width: 100%;
           }
         }
-  
+
         .texts {
           width: calc(100% - 80px);
           height: 25%;
@@ -122,6 +121,56 @@
           .secondary-text {
             margin-inline: auto;
             width: 40%;
+            font-size: larger;
+          }
+        }
+      }
+    }
+  }
+
+  // for width < 640px
+  @media (max-width: 640px) {
+    .first-home {
+      min-height: 600px;
+      // max-height: 100vh;
+      padding-top: 40px;
+      width: 100%;
+      overflow: hidden ;
+
+      .first-home-banner {
+        flex-direction: column;
+        gap: 40px;
+        padding-inline: 20px;
+
+        .banner-icon-img {
+          --img-size-1: 80vw;
+          height: var(--img-size-1);
+          width: var(--img-size-1);
+          margin: auto;
+
+          position: relative;
+          bottom: 0;
+
+          .teacher1 {
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        .texts {
+          width: calc(100% - 80px);
+          height: 25%;
+          width: 100%;
+          flex-wrap: wrap;
+          text-align: center;
+          position: relative;
+          top: 25%;
+          left: 0;
+          margin-left: 0px;
+
+          .secondary-text {
+            margin-inline: auto;
+            width: 90%;
             font-size: larger;
           }
         }

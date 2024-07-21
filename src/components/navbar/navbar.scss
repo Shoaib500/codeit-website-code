@@ -229,3 +229,131 @@
     }
   }
 }
+
+// for width < 640px
+@media (max-width : 640px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0px;
+
+
+
+    .mid {
+      // display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      transform: translateX(0%);
+      transition: 0.5s;
+
+      background: #00000025;
+      width: 100vw;
+      height: 100vh;
+      padding: 0;
+
+      .nav-elements {
+        background: #fff;
+        width: 300px;
+        height: 100vh;
+        padding: 40px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+
+        position: relative;
+        top: 0;
+
+
+        .close-btn{
+          display: block;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        .nav-element {
+          cursor: pointer;
+          color: #43505b;
+          font-weight: bold;
+
+          &.active,
+          &:hover {
+            color: #961128;
+          }
+        }
+
+        .nav-elem-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          .arrow {
+            height: 20px;
+            margin: 0 4px;
+            margin-top: 1px;
+          }
+
+          &:hover {
+            .arrow {
+              filter: invert(13%) sepia(33%) saturate(7457%) hue-rotate(337deg)
+                brightness(97%) contrast(100%);
+            }
+
+            .nav-element {
+              color: #961128;
+            }
+          }
+        }
+
+        .dropdown-wrapper {
+          position: relative;
+          height: 41px;
+
+          .dropdown-menu {
+            display: none;
+
+            &.show {
+              display: block;
+              position: absolute;
+              top: 40px;
+              left: -50%;
+              z-index: 5;
+
+              width: 300px;
+              background-color: black;
+            }
+          }
+        }
+      }
+    }
+
+    .hideMenu{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      transform: translateX(-150%);
+      transition: 0.5s;
+    }
+
+    .right {
+      display: none;
+    }
+
+    .menu {
+      display: block;
+      padding: 20px;
+
+      .menu-btn {
+        width: 44px;
+        cursor: pointer;
+      }
+    }
+  }
+}

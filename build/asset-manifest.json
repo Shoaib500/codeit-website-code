@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.2a610fe5.css",
+    "main.css": "./static/css/main.aa9bdf02.css",
     "main.js": "./static/js/main.8f064ae4.js",
     "static/js/453.ace21015.chunk.js": "./static/js/453.ace21015.chunk.js",
     "static/media/Hospitality.jpg": "./static/media/Hospitality.feed97ec58e9366a54de.jpg",
@@ -86,12 +86,12 @@
     "static/media/mail.svg": "./static/media/mail.65520679221cf5451fa0c031fd1e815a.svg",
     "static/media/close.svg": "./static/media/close.9183212e119f20527c9a40ac40a850b9.svg",
     "static/media/hamburger.svg": "./static/media/hamburger.17bf462f3dcfd64eff2e82dad7d0c9e5.svg",
-    "main.2a610fe5.css.map": "./static/css/main.2a610fe5.css.map",
+    "main.aa9bdf02.css.map": "./static/css/main.aa9bdf02.css.map",
     "main.8f064ae4.js.map": "./static/js/main.8f064ae4.js.map",
     "453.ace21015.chunk.js.map": "./static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a610fe5.css",
+    "static/css/main.aa9bdf02.css",
     "static/js/main.8f064ae4.js"
   ]
 }
