@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "./static/css/main.aa9bdf02.css",
-    "main.js": "./static/js/main.8f064ae4.js",
+    "main.css": "./static/css/main.7ee7095c.css",
+    "main.js": "./static/js/main.4915076f.js",
     "static/js/453.ace21015.chunk.js": "./static/js/453.ace21015.chunk.js",
     "static/media/Hospitality.jpg": "./static/media/Hospitality.feed97ec58e9366a54de.jpg",
-    "static/media/teacher1.png": "./static/media/teacher1.27d8b04629cdf6949965.png",
+    "static/media/AppbannerImg1.jpg": "./static/media/AppbannerImg1.c9d8aac482cc1f68e8c6.jpg",
     "static/media/luxuryAkar.webp": "./static/media/luxuryAkar.d4b002c45865c51231ed.webp",
     "static/media/LindaParadise.webp": "./static/media/LindaParadise.6c3958b540724aa92823.webp",
     "static/media/colourReflections.webp": "./static/media/colourReflections.7a92d1519a5cf6fb921a.webp",
@@ -12,10 +12,12 @@
     "static/media/tajribaBusiness.webp": "./static/media/tajribaBusiness.014dd42f127d7a453220.webp",
     "static/media/drFarhadinik.webp": "./static/media/drFarhadinik.ccfdc7cb2aece6e91e62.webp",
     "static/media/AIAmayaWater.webp": "./static/media/AIAmayaWater.277685da6a70533d7081.webp",
+    "static/media/model1.png": "./static/media/model1.84b7c3a53151ecc5cd6c.png",
     "static/media/ai-sadafPetCare.webp": "./static/media/ai-sadafPetCare.3ab60810ec8d90f0a86a.webp",
     "static/media/confidentDental.webp": "./static/media/confidentDental.b5023ac63d74bc21a9a6.webp",
     "static/media/biladalsham.webp": "./static/media/biladalsham.ba9846d9b9c540ec024e.webp",
     "static/media/mazoun.webp": "./static/media/mazoun.0d1e295dbbb9d0297ddf.webp",
+    "static/media/digital-marketing-agency.jpg": "./static/media/digital-marketing-agency.2ff9782bb144ebdcc30a.jpg",
     "static/media/HealthCare&Wellness.jpg": "./static/media/HealthCare&Wellness.8c607f5619138151066a.jpg",
     "static/media/bridgertongroup.webp": "./static/media/bridgertongroup.9c8332d061f58f5dc735.webp",
     "static/media/Trading&Logistics.jpg": "./static/media/Trading&Logistics.64f12cca295e8da81273.jpg",
@@ -43,8 +45,10 @@
     "static/media/whiteSand.webp": "./static/media/whiteSand.567ed0230fd881eb7f42.webp",
     "static/media/SCSDubai.webp": "./static/media/SCSDubai.e68d717f58533a17666d.webp",
     "static/media/ROIRealEstate.webp": "./static/media/ROIRealEstate.84679c2ced5887127d50.webp",
+    "static/media/content-writing.jpg": "./static/media/content-writing.73cfd1eb8628e07993cc.jpg",
     "static/media/MasarInd.webp": "./static/media/MasarInd.50649f17b67a24850030.webp",
     "static/media/TVGRealtor.webp": "./static/media/TVGRealtor.47b2c5a9c76bf9631083.webp",
+    "static/media/brand-mrkebg2.webp": "./static/media/brand-mrkebg2.bdc99b8e9cb95dd99013.webp",
     "static/media/safetyShopDubai.webp": "./static/media/safetyShopDubai.1e89dd6759c55b94ffed.webp",
     "static/media/crownCapitalUAE.webp": "./static/media/crownCapitalUAE.d8652974738277969425.webp",
     "static/media/ABHrealestate.avif": "./static/media/ABHrealestate.5c60522f22bf4b6cdf6e.avif",
@@ -86,12 +90,12 @@
     "static/media/mail.svg": "./static/media/mail.65520679221cf5451fa0c031fd1e815a.svg",
     "static/media/close.svg": "./static/media/close.9183212e119f20527c9a40ac40a850b9.svg",
     "static/media/hamburger.svg": "./static/media/hamburger.17bf462f3dcfd64eff2e82dad7d0c9e5.svg",
-    "main.aa9bdf02.css.map": "./static/css/main.aa9bdf02.css.map",
-    "main.8f064ae4.js.map": "./static/js/main.8f064ae4.js.map",
+    "main.7ee7095c.css.map": "./static/css/main.7ee7095c.css.map",
+    "main.4915076f.js.map": "./static/js/main.4915076f.js.map",
     "453.ace21015.chunk.js.map": "./static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa9bdf02.css",
-    "static/js/main.8f064ae4.js"
+    "static/css/main.7ee7095c.css",
+    "static/js/main.4915076f.js"
   ]
 }

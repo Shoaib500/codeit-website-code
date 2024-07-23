@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.scss";
-import teacher1 from "../../assets/images/teacher1.png";
+import model from "../../assets/images/model1.png";
 import Typewriter from "../../components/typewriter/typewriter";
 import ExploreServices from "./exploreServices/exploreServices";
 import WhoWeAre from "./whoWeAre/whoWeAre";
@@ -35,7 +35,7 @@ const Home: React.FC<HomeProps> = () => {
           </div>
 
           <div className="banner-icon-img">
-            <img src={teacher1} className="teacher1" alt="" />
+            <img src={model} className="model" alt="" />
           </div>
         </div>
       </div>
