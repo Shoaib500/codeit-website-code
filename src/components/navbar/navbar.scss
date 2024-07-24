@@ -25,7 +25,7 @@
       display: flex;
       gap: 30px;
 
-      .close-btn{
+      .close-btn {
         display: none;
       }
 
@@ -66,20 +66,48 @@
 
       .dropdown-wrapper {
         position: relative;
-        height: 41px;
+        // height: 41px;
 
         .dropdown-menu {
           display: none;
+          max-width: 300px;
+          position: absolute;
+          text-wrap: nowrap;
+          top: 20px;
+          left: -50%;
+          z-index: 5;
+          background: #fff !important;
+          color: #43505b !important;
+          // scale: 0;
+          // transition: all 0.1s ease-in-out;
+          background: red;
+
 
           &.show {
             display: block;
             position: absolute;
-            top: 40px;
+            text-wrap: nowrap;
+            top: 20px;
             left: -50%;
             z-index: 5;
+            // scale: 1;
+            // transition: all 0.1s ease-in-out;
 
-            width: 300px;
-            background-color: black;
+            .title:hover {
+              cursor: pointer;
+              color: #961128;
+            }
+          }
+
+          .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 24px 40px;
+            padding-top: 40px !important;
+            gap: 24px;
+            font-weight: bold;
           }
         }
       }
@@ -108,8 +136,6 @@
   .navbar {
     justify-content: space-between;
 
-
-
     .mid {
       // display: none;
       position: absolute;
@@ -139,8 +165,7 @@
         position: relative;
         top: 0;
 
-
-        .close-btn{
+        .close-btn {
           display: block;
           width: 100%;
           display: flex;
@@ -183,29 +208,56 @@
           }
         }
 
+
         .dropdown-wrapper {
           position: relative;
-          height: 41px;
-
+  
           .dropdown-menu {
             display: none;
-
+            max-width: 300px;
+            text-wrap: nowrap;
+            z-index: 5;
+            background: #fff !important;
+            color: #43505b !important;
+            // scale: 0;
+            // transition: all 0.1s ease-in-out;
+  
             &.show {
               display: block;
-              position: absolute;
-              top: 40px;
-              left: -50%;
+              text-wrap: nowrap;
               z-index: 5;
-
-              width: 300px;
-              background-color: black;
+              // scale: 1;
+              // transition: all 0.1s ease-in-out;
+  
+              .title:hover {
+                cursor: pointer;
+                color: #961128;
+              }
+            }
+  
+            .header {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              margin-top: 14px;
+              padding: 0;
+              padding-top: 0px !important;
+              margin-left: 56px;
+              gap: 10px;
+              font-weight: bold;
+              font-size: 14px;
             }
           }
+        }
+
+        .move-down{
+          margin-bottom: 116px;
         }
       }
     }
 
-    .hideMenu{
+    .hideMenu {
       position: absolute;
       top: 0;
       left: 0;
@@ -231,12 +283,10 @@
 }
 
 // for width < 640px
-@media (max-width : 640px) {
+@media (max-width: 640px) {
   .navbar {
     justify-content: space-between;
     padding: 0px;
-
-
 
     .mid {
       // display: none;
@@ -267,8 +317,7 @@
         position: relative;
         top: 0;
 
-
-        .close-btn{
+        .close-btn {
           display: block;
           width: 100%;
           display: flex;
@@ -311,29 +360,52 @@
           }
         }
 
+
         .dropdown-wrapper {
           position: relative;
-          height: 41px;
-
+          // height: 41px;
+  
           .dropdown-menu {
             display: none;
-
+            max-width: 300px;
+            position: absolute;
+            text-wrap: nowrap;
+            top: 30px;
+            left: -50%;
+            z-index: 5;
+            background: #fff !important;
+            color: #43505b !important;
+            // scale: 0;
+            // transition: all 0.1s ease-in-out;
+  
             &.show {
               display: block;
-              position: absolute;
-              top: 40px;
-              left: -50%;
+              text-wrap: nowrap;
               z-index: 5;
-
-              width: 300px;
-              background-color: black;
+              // scale: 1;
+              // transition: all 0.1s ease-in-out;
+  
+              .title:hover {
+                cursor: pointer;
+                color: #961128;
+              }
+            }
+  
+            .header {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              padding: 24px 36px;
+              gap: 24px;
+              font-weight: bold;
             }
           }
         }
       }
     }
 
-    .hideMenu{
+    .hideMenu {
       position: absolute;
       top: 0;
       left: 0;

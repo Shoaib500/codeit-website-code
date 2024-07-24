@@ -29,7 +29,7 @@ const Home: React.FC<HomeProps> = () => {
             </div>
             <Typewriter texts={texts} />
             <div className="secondary-text">
-              Let our social media agency in Mumbai take your online presence to
+              Let our business consultancy take your online presence to
               the next level.
             </div>
           </div>

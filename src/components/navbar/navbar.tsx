@@ -31,7 +31,6 @@ const Navbar: React.FC<NavbarProps> = () => {
       {/* mid */}
       <div className={`mid ${openMenu === false ? "hideMenu" : ""}`}>
         <div className="nav-elements">
-
           {/* close */}
           <div className="close-btn">
             <img
@@ -68,9 +67,10 @@ const Navbar: React.FC<NavbarProps> = () => {
           </div>
 
           <div
-            className="dropdown-wrapper"
+            className={`dropdown-wrapper ${showMenu ? "move-down" : ""}`}
             onClick={() => {
-              setOpenMenu(false);
+              setShowMenu(!showMenu);
+              setActiveTab("services");
             }}
             onMouseEnter={() => {
               setShowMenu(true);
@@ -92,14 +92,47 @@ const Navbar: React.FC<NavbarProps> = () => {
               </div>
               <img className="arrow" src={downArrow} alt="" />
             </div>
-            {/* 
+
             <div className={`dropdown-menu ${showMenu ? "show" : ""}`}>
-                <div className="header">
-                    <div className="title">Design & Development</div>
-                    <div className="title">Digital Marketing</div>
-                    <div className="title">Content Writing</div>
+              <div className="header">
+                <div
+                  className="title"
+                  onClick={() => {
+                    setOpenMenu(false);
+                    navigate("/webdev");
+                  }}
+                >
+                  Design & Development
                 </div>
-            </div> */}
+                <div
+                  className="title"
+                  onClick={() => {
+                    setOpenMenu(false);
+                    navigate("/brand-marketing");
+                  }}
+                >
+                  Bramd Marketing
+                </div>
+                <div
+                  className="title"
+                  onClick={() => {
+                    setOpenMenu(false);
+                    navigate("/digital-marketing");
+                  }}
+                >
+                  Digital Marketing
+                </div>
+                <div
+                  className="title"
+                  onClick={() => {
+                    setOpenMenu(false);
+                    navigate("/content-writing");
+                  }}
+                >
+                  Content Writing
+                </div>
+              </div>
+            </div>
           </div>
 
           <div
@@ -138,7 +171,13 @@ const Navbar: React.FC<NavbarProps> = () => {
 
       {/* right */}
       <div className="right">
-        <div className="speak-to-expert-btn">Speak to an Expert</div>
+        {/* <div className="speak-to-expert-btn">Speak to an Expert</div> */}
+        <a
+          href="https://calendly.com/shoaibmustaque10/appointment"
+          className="speak-to-expert-btn"
+        >
+          Speak to an Expert
+        </a>
       </div>
 
       {/* hamburger */}
