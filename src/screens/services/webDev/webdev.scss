@@ -1,12 +1,17 @@
 .webDev {
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .webBgBanner {
     background-image: url(../../../assets/images/Bg-Img.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 100px 0;
+    padding: 80px 0;
+    width: 100%;
+    z-index: -5;
 
     &::before {
       content: "";
@@ -15,6 +20,8 @@
       height: 100%;
       top: 0;
       left: 0;
+      z-index: -5;
+
       background: linear-gradient(
         226.92deg,
         rgb(193 42 69) 15.33%,
@@ -30,7 +37,6 @@
     position: relative;
 
     .heroTopDiv {
-      z-index: 5;
       position: relative;
     }
 
@@ -44,6 +50,7 @@
         flex-wrap: wrap;
 
         .col {
+          z-index: -5;
           --size-1: 1rem;
           width: calc((50%) - var(--size-1) * 2);
           height: calc((100%) - var(--size-1) * 2);
@@ -176,13 +183,12 @@
                     color: #000;
                     font-size: 16px;
 
-                    &placeholder{
+                    &placeholder {
                       color: #9f9797;
                     }
                   }
-                  
 
-                  select  {
+                  select {
                     width: 100%;
                     border: none;
                     outline: none;
@@ -213,6 +219,39 @@
           }
         }
       }
+    }
+  }
+
+  .numbers {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0;
+    height: 75px;
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .number {
+        color: #961128;
+        font-size: 48px;
+        font-weight: bold;
+      }
+
+      .text {
+        font-size: 20px;
+        color: #43505b;
+      }
+    }
+
+    .line {
+      width: 0.5px;
+      height: 100%;
+      background-color: #d4d4d4;
     }
   }
 }

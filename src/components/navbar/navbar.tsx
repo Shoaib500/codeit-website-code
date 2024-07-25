@@ -70,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             className={`dropdown-wrapper ${showMenu ? "move-down" : ""}`}
             onClick={() => {
               setShowMenu(!showMenu);
-              setActiveTab("services");
+              // setActiveTab("services");
             }}
             onMouseEnter={() => {
               setShowMenu(true);
@@ -84,22 +84,24 @@ const Navbar: React.FC<NavbarProps> = () => {
                 className={`nav-element ${
                   activeTab === "services" ? "active" : ""
                 }`}
-                onClick={() => {
-                  setActiveTab("services");
-                }}
+                // onClick={() => {
+                //   setActiveTab("services");
+                // }}
               >
                 Services
               </div>
               <img className="arrow" src={downArrow} alt="" />
             </div>
 
-            <div className={`dropdown-menu ${showMenu ? "show" : ""}`}>
+            <div
+              className={`dropdown-menu ${showMenu ? "show" : ""} `}>
               <div className="header">
                 <div
                   className="title"
                   onClick={() => {
                     setOpenMenu(false);
                     navigate("/webdev");
+                    setActiveTab("services");
                   }}
                 >
                   Design & Development
@@ -109,6 +111,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                   onClick={() => {
                     setOpenMenu(false);
                     navigate("/brand-marketing");
+                    setActiveTab("services");
                   }}
                 >
                   Bramd Marketing
@@ -118,6 +121,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                   onClick={() => {
                     setOpenMenu(false);
                     navigate("/digital-marketing");
+                    setActiveTab("services");
                   }}
                 >
                   Digital Marketing
@@ -127,6 +131,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                   onClick={() => {
                     setOpenMenu(false);
                     navigate("/content-writing");
+                    setActiveTab("services");
                   }}
                 >
                   Content Writing
@@ -140,8 +145,8 @@ const Navbar: React.FC<NavbarProps> = () => {
               activeTab === "contact-us" ? "active" : ""
             }`}
             onClick={() => {
-              setActiveTab("contact-us");
               setOpenMenu(false);
+              setActiveTab("contact-us");
             }}
           >
             Contact Us

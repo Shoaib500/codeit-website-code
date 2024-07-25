@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  z-index: 10;
   // margin-top: 10px;
 
   .left {
@@ -75,12 +76,11 @@
           text-wrap: nowrap;
           top: 20px;
           left: -50%;
-          z-index: 5;
+          z-index: 10;
           background: #fff !important;
           color: #43505b !important;
           // scale: 0;
           // transition: all 0.1s ease-in-out;
-          background: red;
 
 
           &.show {
@@ -98,7 +98,7 @@
               color: #961128;
             }
           }
-
+          
           .header {
             display: flex;
             flex-direction: column;
@@ -396,9 +396,13 @@
               flex-direction: column;
               justify-content: center;
               align-items: flex-start;
-              padding: 24px 36px;
-              gap: 24px;
+              margin-top: 14px;
+              padding: 0;
+              padding-top: 0px !important;
+              margin-left: 56px;
+              gap: 10px;
               font-weight: bold;
+              font-size: 14px;
             }
           }
         }

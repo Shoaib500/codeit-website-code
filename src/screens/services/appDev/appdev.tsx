@@ -141,6 +141,23 @@ const appdev = () => {
           </div>
         </div>
       </section>
+
+      <div className="numbers">
+        <div className="section">
+          <div className="number">10</div>
+          <div className="text">Years of Experience</div>
+        </div>
+        <div className="line"></div>
+        <div className="section">
+          <div className="number">365+</div>
+          <div className="text">Happy Clients</div>
+        </div>
+        <div className="line"></div>
+        <div className="section">
+          <div className="number">90%</div>
+          <div className="text">Projects Delivered</div>
+        </div>
+      </div>
     </div>
   );
 };
