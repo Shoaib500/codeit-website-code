@@ -57,25 +57,6 @@
     }
   }
 
-  .direct-contact{
-    position: fixed;
-    bottom: 44px;
-    left: 44px;
-    width: 3.5rem;
-
-    a{
-      width: 100%;
-
-      .w-icon{
-        width: 100%;
-        scale: 1;
-      }
-      :hover{
-        scale: 0.9;
-      }
-    }
-  }
-
   // for width < 1440px
   @media (max-width: 1440px) {
     .first-home {
@@ -192,25 +173,6 @@
             width: 90%;
             font-size: larger;
           }
-        }
-      }
-    }
-
-    .direct-contact{
-      position: fixed;
-      bottom: 24px;
-      left: 24px;
-      width: 3.5rem;
-  
-      a{
-        width: 100%;
-  
-        .w-icon{
-          width: 100%;
-          scale: 1;
-        }
-        :hover{
-          scale: 0.9;
         }
       }
     }

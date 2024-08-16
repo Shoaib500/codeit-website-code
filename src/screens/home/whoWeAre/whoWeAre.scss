@@ -3,6 +3,7 @@
     .who-we-are{
         margin-block: 20px 60px;
 
+
         .wwa-img{
             max-width: 50%;
             border-radius: 15px;
@@ -55,8 +56,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70vw;
-    overflow: hidden;
+    width: 80vw;
 
     .wwa-img{
         border-radius: 15px;
@@ -74,7 +74,7 @@
 
     .wwa-right-content{
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         gap: 20px;
         align-items: flex-start;
         margin-left: 30px;

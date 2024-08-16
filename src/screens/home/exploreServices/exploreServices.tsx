@@ -1,5 +1,4 @@
-import React, {useRef} from 'react';
-
+import React from 'react';
 import './exploreServices.scss';
 
 import webDev from '../../../assets/icons/webDev.png';
@@ -8,51 +7,16 @@ import brandMarketing from '../../../assets/icons/brandMarketing.png';
 import contentWriting from '../../../assets/icons/contentWriting.png';
 import DMS from '../../../assets/icons/DMS.png';
 import { useNavigate } from 'react-router-dom';
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 type ExploreServicesProps = {
     
 };
 
 const ExploreServices:React.FC<ExploreServicesProps> = () => {
-    const esAniRef = useRef(null);
 
     const navigate = useNavigate();
-
-    useGSAP(()=>{
-        const serviceAnimation = () =>{
-            gsap.from(esAniRef.current,{
-                y: 100,
-                duration: 0.2,
-
-                scrollTrigger:{
-                    trigger: esAniRef.current,
-                    scroller: "body",
-                    markers: false,
-                    start: "top 80%",
-                }
-            });
-            gsap.from(".explore-card",{
-                scale: 0.25,
-                duration: 0.3,
-                opacity: 0,
-                // delay: 1,
-                
-                scrollTrigger:{
-                    trigger: esAniRef.current,
-                    // scroller: "body",
-                    // markers: false,
-                    start: "top 80%",
-                }
-            });
-        }
-        serviceAnimation();
-    })
     
-    return <div className='explore-services' ref={esAniRef} >
+    return <div className='explore-services'>
         <div className='title'>Explore Our Services</div>
         <div className='services-cards'>
             
