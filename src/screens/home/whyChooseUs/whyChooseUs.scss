@@ -1,57 +1,10 @@
-// for width < 1440px
-@media (max-width : 1440px) {
-    .what-we-do{
-        flex-direction: column;
-
-        .wwa-img{
-            max-width: 50%;
-            border-radius: 15px;
-        }
-    
-        .wwa-right-content{
-    
-            .wwa-text{
-                font-size: large;
-                text-align: left;
-                line-height: 1.5;
-            }
-
-
-        }
-    }
-}
-
-
-// for width < 1040px
-@media (max-width : 1040px) {
-    .what-we-do{
-        margin-block: 20px 60px;
-
-        .wwa-img{
-            display: none;
-        }
-    
-        .wwa-rigth-content{
-            margin-left: 0px !important;
-    
-            .wwa-text{
-                font-size: large;
-                text-align: left;
-                line-height: 1.5;
-            }
-        }
-
-    }
-}
-
-
-.who-we-are{
+.why-choose-us{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80vw;
+    width: 70vw;
 
-    .wwa-img{
+    .wcu-img{
         border-radius: 15px;
         // animation: forwards 1s imgAnimate;
     }
@@ -65,7 +18,7 @@
         }
     }
 
-    .wwa-right-content{
+    .wcu-right-content{
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -74,24 +27,24 @@
         text-align: left;
         // animation: forwards 1s contentAnimate;
 
-        .wwa-title{
+        .wcu-title{
             font-size: xx-large;
             font-weight: bold;
             color: #0A2134;
         }
 
-        .wwa-sub-title{
+        .wcu-sub-title{
             font-size: x-large;
             font-weight: bold;
             color: #43505B;
         }
 
-        .wwa-text{
+        .wcu-text{
             font-size: medium;
             text-align: left;
         }
 
-        .wwa-btn{
+        .wcu-btn{
             font-size: 20px;
             color: white;
             background-color: #C12A45;
@@ -117,4 +70,52 @@
         }
     }
 }
+
+// for width < 1440px
+@media (max-width : 1440px) {
+    .why-choose-us{
+        flex-direction: column;
+
+        .wcu-img{
+            max-width: 50%;
+            border-radius: 15px;
+        }cu
+        .wcu-right-content{
+    
+            .wcu-text{
+                font-size: large;
+                text-align: left;
+                line-height: 1.5;
+            }
+
+
+        }
+    }
+}
+
+
+// for width < 1040px
+@media (max-width : 1040px) {
+    .why-choose-us{
+        margin-block: 20px 60px;
+
+        .wcu-img{
+            display: none;
+        }
+    
+        .wcu-right-content{
+            margin-left: 0px !important;
+    
+            .wcu-text{
+                font-size: large;
+                text-align: left;
+                line-height: 1.5;
+            }
+        }
+
+    }
+}
+
+
+
 

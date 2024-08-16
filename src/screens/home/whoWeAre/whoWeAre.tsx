@@ -1,14 +1,71 @@
-import React from "react";
+import React, {useRef} from "react";
 import './whoWeAre.scss'
 import whoWeAreImg from "../../../assets/images/whoweare.avif";
+import { easeInOut } from "framer-motion";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 type WhoWeAreProps = {};
 
 const WhoWeAre: React.FC<WhoWeAreProps> = () => {
+  const wwaAniRef = useRef(null);
+  const wwaImgRef = useRef(null);
+  const wwaContRef = useRef(null);
+
+  useGSAP(()=>{
+    const wwaAnimation = () => {
+      gsap.from(wwaAniRef.current,{
+        y: 200,
+        duration: 0.2,
+        opacity: 0,
+
+        scrollTrigger:{
+          trigger: wwaAniRef.current,
+          scroller: "body",
+          markers: false,
+          start: "top 75%",
+          end: "top 75%",
+        }
+      })
+      gsap.from(wwaImgRef.current,{
+        x: -200,
+        duration: 0.3,
+        opacity: 0,
+        transition: easeInOut,
+        // delay: 0.5,
+
+        scrollTrigger:{
+          trigger: wwaAniRef.current,
+          // scroller: "body",
+          // markers: false,
+          start: "top 75%",
+        }
+       
+      });
+      gsap.from(wwaContRef.current,{
+        x: 200,
+        duration: 0.3,
+        opacity: 0,
+        transition: easeInOut,
+        // delay: 0.5,
+        
+        scrollTrigger:{
+          trigger: wwaAniRef.current,
+          // scroller: "body",
+          // markers: false,
+          start: "top 75%",
+        }
+      });
+    };
+    wwaAnimation();
+  });
+
   return (
-    <div className="who-we-are">
-      <img src={whoWeAreImg} alt="" className="wwa-img" />
-      <div className="wwa-right-content">
+    <div className="who-we-are" ref={wwaAniRef} >
+      <img src={whoWeAreImg} alt="" className="wwa-img" ref={wwaImgRef} />
+      <div className="wwa-right-content" ref={wwaContRef} >
         <div className="wwa-title">Who We Are</div>
         <div className="wwa-sub-title">
           Empowering Your Digital World Since 2014
