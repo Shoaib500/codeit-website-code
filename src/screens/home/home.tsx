@@ -12,8 +12,8 @@ import Testimony from "./testimony/testimony";
 import { easeIn, easeInOut } from "framer-motion";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-// import {ScrollTrigger} from "gsap/ScrollTrigger";
-// gsap.registerPlugin(ScrollTrigger);
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 type HomeProps = {};
 
