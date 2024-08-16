@@ -180,6 +180,8 @@ const Navbar: React.FC<NavbarProps> = () => {
         <a
           href="https://calendly.com/shoaibmustaque10/appointment"
           className="speak-to-expert-btn"
+          target="_blank"
+          rel="noreferrer"
         >
           Speak to an Expert
         </a>
