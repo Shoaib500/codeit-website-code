@@ -1,0 +1,37 @@
+.direct-contact {
+  position: fixed;
+  left: 44px;
+  bottom: 44px;
+  width: 3.5rem;
+
+  a {
+    width: 100%;
+
+    .w-icon {
+      width: 100%;
+    }
+    :hover {
+      scale: 0.9;
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .direct-contact {
+    position: fixed;
+    left: 24px;
+    bottom: 24px;
+    width: 3.5rem;
+
+    a {
+      width: 100%;
+
+      .w-icon {
+        width: 100%;
+      }
+      :hover {
+        scale: 0.9;
+      }
+    }
+  }
+}
