@@ -7,7 +7,7 @@ type DirectLinkProps = {};
 const DirectLink: React.FC<DirectLinkProps> = () => {
   return (
     <div className="direct-contact">
-      <a href="https://www.whatsapp.com/" target="_blank" rel="noreferrer">
+      <a href="http://wa.me/7980978482" target="_blank" rel="noreferrer">
         <img src={WhatsApp} alt="#" className="w-icon" />
       </a>
     </div>

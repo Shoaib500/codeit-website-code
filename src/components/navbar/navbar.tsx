@@ -171,6 +171,15 @@ const Navbar: React.FC<NavbarProps> = () => {
           >
             Blog
           </div>
+           <div className="nav-element speakToExpertBtn">
+           <a
+          href="https://calendly.com/shoaibmustaque10/appointment"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Speak to an Expert
+        </a>
+          </div>
         </div>
       </div>
 

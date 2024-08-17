@@ -1,13 +1,67 @@
-import React from "react";
 import whatWeDo from "../../../assets/images/whatwedo.avif";
 import "./whatWeDo.scss";
+import { easeIn, easeInOut } from "framer-motion";
+import React, { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 type WhatWeDoProps = {};
 
 const WhatWeDo: React.FC<WhatWeDoProps> = () => {
+
+  const wwdAniRef = useRef(null);
+  const wwdImgRef = useRef(null);
+  const wwdContRef = useRef(null);
+  useGSAP(()=>{
+      gsap.from(wwdAniRef.current,{
+        y: 200,
+        duration: 0.2,
+        transition: easeInOut,
+        opacity: 0,
+
+        scrollTrigger:{
+          trigger: wwdAniRef.current,
+          scroller: "body",
+          markers: false,
+          start: "top 75%",
+          end: "top 75%",
+        }
+      })
+      gsap.from(wwdImgRef.current,{
+        x: 200,
+        duration: 0.3,
+        opacity: 0,
+        transition: easeInOut,
+        // delay: 3,
+
+        scrollTrigger:{
+          trigger: wwdAniRef.current,
+          // scroller: "body",
+          // markers: false,
+          start: "top 75%",
+        }
+      });
+      gsap.from(wwdContRef.current,{
+        x: -200,
+        duration: 0.3,
+        opacity: 0,
+        transition: easeInOut,
+        // delay: 3,
+
+        scrollTrigger:{
+          trigger: wwdAniRef.current,
+          // scroller: "body",
+          // markers: false,
+          start: "top 75%",
+        }
+      });
+  });
+
   return (
-    <div className="what-we-do">
-      <div className="wwa-left-content">
+    <div className="what-we-do" ref={wwdAniRef}>
+      <div className="wwa-left-content" ref={wwdContRef}>
         <div className="wwa-title">What We Do</div>
         <div className="wwa-sub-title">Experience Digital Excellence</div>
         <div className="wwa-text">
@@ -23,7 +77,7 @@ const WhatWeDo: React.FC<WhatWeDoProps> = () => {
           beyond to ensure you achieve your digital goals.
         </div>
       </div>
-      <img src={whatWeDo} alt="" className="wwd-img" />
+      <img src={whatWeDo} alt="" className="wwd-img" ref={wwdImgRef} />
     </div>
   );
 };

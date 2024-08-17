@@ -1,14 +1,68 @@
-import React from "react";
 import "./whyChooseUs.scss";
 import whyChooseUsImg from "../../../assets/images/whyChooseUs.avif";
+import { easeIn, easeInOut } from "framer-motion";
+import React, { useRef, useEffect } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 type WhyChooseUsProps = {};
 
 const WhyChooseUs: React.FC<WhyChooseUsProps> = () => {
+
+  const wcuAniRef = useRef(null);
+  const wcuImgRef = useRef(null);
+  const wcuContRef = useRef(null);
+  useGSAP(() => {
+    gsap.from(wcuAniRef.current, {
+      y: 200,
+      duration: 0.2,
+      transition: easeInOut,
+      opacity: 0,
+
+      scrollTrigger: {
+        trigger: wcuAniRef.current,
+        scroller: "body",
+        markers: false,
+        start: "top 75%",
+        end: "top 75%",
+      },
+    });
+    gsap.from(wcuImgRef.current, {
+      x: -200,
+      duration: 0.3,
+      opacity: 0,
+      transition: easeInOut,
+      // delay: 0.5,
+
+      scrollTrigger: {
+        trigger: wcuAniRef.current,
+        // scroller: "body",
+        // markers: false,
+        start: "top 75%",
+      },
+    });
+    gsap.from(wcuContRef.current, {
+      x: 200,
+      duration: 0.3,
+      opacity: 0,
+      transition: easeInOut,
+      // delay: 0.5,
+
+      scrollTrigger: {
+        trigger: wcuAniRef.current,
+        // scroller: "body",
+        // markers: false,
+        start: "top 75%",
+      },
+    });
+  });
+
   return (
-    <div className="who-we-are">
-      <img src={whyChooseUsImg} alt="" className="wwa-img" />
-      <div className="wwa-right-content">
+    <div className="who-we-are" ref={wcuAniRef}>
+      <img src={whyChooseUsImg} alt="" className="wwa-img" ref={wcuImgRef} />
+      <div className="wwa-right-content" ref={wcuContRef}>
         <div className="wwa-title">Why Choose Us</div>
         <div className="wwa-sub-title">
           Cast Off Towards Success - Let Us Be Your Guiding Hand
