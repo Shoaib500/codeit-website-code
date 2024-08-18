@@ -1,9 +1,10 @@
 import React from "react";
-
+import DirectLink from "../../../components/directLink/directLink";
 import "./appdev.scss";
 
 const appdev = () => {
   return (
+    <>
     <div className="appDev">
       <section className="heroBanner appBgBanner">
         <div className="container-xxl heroTopDiv">
@@ -159,6 +160,9 @@ const appdev = () => {
         </div>
       </div>
     </div>
+
+    <DirectLink />
+    </>
   );
 };
 

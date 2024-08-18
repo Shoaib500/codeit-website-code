@@ -1,6 +1,6 @@
 import "./whoWeAre.scss";
 import whoWeAreImg from "../../../assets/images/whoweare.avif";
-import { easeIn, easeInOut } from "framer-motion";
+// import { easeIn, easeInOut } from "framer-motion";
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -10,55 +10,57 @@ gsap.registerPlugin(ScrollTrigger);
 type WhoWeAreProps = {};
 
 const WhoWeAre: React.FC<WhoWeAreProps> = () => {
-
   const wwaAniRef = useRef(null);
   const wwaImgRef = useRef(null);
   const wwaContRef = useRef(null);
   useGSAP(() => {
     gsap.from(wwaAniRef.current, {
-      y: 200,
-      duration: 0.2,
-      transition: easeInOut,
-      opacity: 0,
+      y: 150,
+      duration: 0.8,
+      opacity: 0.25,
+      ease: "back",
 
       scrollTrigger: {
         trigger: wwaAniRef.current,
         scroller: "body",
         markers: false,
-        start: "top 75%",
-        end: "top 75%",
+        start: "top 80%",
+        end: "top 30%",
+        scrub: 1,
       },
     });
     gsap.from(wwaImgRef.current, {
       x: -200,
-      duration: 0.3,
-      opacity: 0,
-      transition: easeInOut,
-      // delay: 0.5,
+      duration: 0.8,
+      opacity: 0.25,
+      ease: "circ",
 
       scrollTrigger: {
         trigger: wwaAniRef.current,
         // scroller: "body",
         // markers: false,
-        start: "top 75%",
+        start: "top 80%",
+        end: "top 30%",
+        scrub: 1,
       },
     });
     gsap.from(wwaContRef.current, {
       x: 200,
-      duration: 0.3,
-      opacity: 0,
-      transition: easeInOut,
-      // delay: 0.5,
+      duration: 0.8,
+      opacity: 0.25,
+      ease: "circ",
 
       scrollTrigger: {
         trigger: wwaAniRef.current,
         // scroller: "body",
         // markers: false,
-        start: "top 75%",
+        start: "top 80%",
+        end: "top 30%",
+        scrub: 1,
       },
     });
   });
-  
+
   return (
     <div className="who-we-are" ref={wwaAniRef}>
       <img src={whoWeAreImg} alt="" className="wwa-img" ref={wwaImgRef} />

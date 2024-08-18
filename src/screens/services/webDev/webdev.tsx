@@ -1,9 +1,10 @@
 import React from "react";
-
+import DirectLink from "../../../components/directLink/directLink";
 import "./webdev.scss";
 
 const webdev = () => {
   return (
+    <>
     <div className="webDev">
       <section className="heroBanner webBgBanner">
         <div className="container-xxl heroTopDiv">
@@ -166,6 +167,9 @@ const webdev = () => {
         </div>
       </div>
     </div>
+
+    <DirectLink />
+    </>
   );
 };
 

@@ -1,6 +1,6 @@
 import "./whyChooseUs.scss";
 import whyChooseUsImg from "../../../assets/images/whyChooseUs.avif";
-import { easeIn, easeInOut } from "framer-motion";
+// import { easeIn, easeInOut } from "framer-motion";
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -16,45 +16,48 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = () => {
   const wcuContRef = useRef(null);
   useGSAP(() => {
     gsap.from(wcuAniRef.current, {
-      y: 200,
-      duration: 0.2,
-      transition: easeInOut,
-      opacity: 0,
+      y: 150,
+      duration: 0.8,
+      opacity: 0.25,
+      ease: "back",
 
       scrollTrigger: {
         trigger: wcuAniRef.current,
         scroller: "body",
         markers: false,
-        start: "top 75%",
-        end: "top 75%",
+        start: "top 80%",
+        end: "top 30%",
+        scrub: 1,
       },
     });
     gsap.from(wcuImgRef.current, {
       x: -200,
-      duration: 0.3,
-      opacity: 0,
-      transition: easeInOut,
-      // delay: 0.5,
+      duration: 0.8,
+      opacity: 0.25,
+      ease: "circ",
 
       scrollTrigger: {
         trigger: wcuAniRef.current,
         // scroller: "body",
         // markers: false,
-        start: "top 75%",
+        start: "top 80%",
+        end: "top 30%",
+        scrub: 1,
       },
     });
     gsap.from(wcuContRef.current, {
       x: 200,
-      duration: 0.3,
-      opacity: 0,
-      transition: easeInOut,
-      // delay: 0.5,
+      duration: 0.8,
+      opacity: 0.25,
+      ease: "circ",
 
       scrollTrigger: {
         trigger: wcuAniRef.current,
         // scroller: "body",
         // markers: false,
-        start: "top 75%",
+        start: "top 80%",
+        end: "top 30%",
+        scrub: 1,
       },
     });
   });

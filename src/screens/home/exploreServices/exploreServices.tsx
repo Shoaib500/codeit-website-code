@@ -6,7 +6,7 @@ import brandMarketing from "../../../assets/icons/brandMarketing.png";
 import contentWriting from "../../../assets/icons/contentWriting.png";
 import DMS from "../../../assets/icons/DMS.png";
 import { useNavigate } from "react-router-dom";
-import { easeIn, easeInOut } from "framer-motion";
+// import { easeIn, easeInOut } from "framer-motion";
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -22,20 +22,22 @@ const ExploreServices: React.FC<ExploreServicesProps> = () => {
   useGSAP(() => {
     gsap.from(esAniRef.current, {
       y: 100,
-      duration: 0.2,
-      transition: easeInOut,
+      duration: 0.8,
+      ease: "back",
 
       scrollTrigger: {
         trigger: esAniRef.current,
         scroller: "body",
         markers: false,
         start: "top 80%",
+        end: "top 30%",
+        scrub: 1,
       },
     });
     gsap.from(".explore-card", {
       scale: 0.25,
-      duration: 0.3,
-      transition: easeInOut,
+      duration: 0.8,
+      ease: "circ",
       opacity: 0,
       // delay: 1,
 
@@ -44,6 +46,8 @@ const ExploreServices: React.FC<ExploreServicesProps> = () => {
         // scroller: "body",
         // markers: false,
         start: "top 80%",
+        end: "top 30%",
+        scrub: 1,
       },
     });
   });

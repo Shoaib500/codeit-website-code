@@ -1,10 +1,16 @@
-import React, { useState } from "react";
 import "./navbar.scss";
 import logo from "../../assets/logos/fullLogo.jpg";
 import downArrow from "../../assets/icons/downArrow.svg";
 import Menu from "../../assets/icons/hamburger.svg";
 import Close from "../../assets/icons/close.svg";
 import { useNavigate } from "react-router-dom";
+// import { easeIn, easeInOut } from "framer-motion";
+import React, { useState, useRef, useEffect } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { forEachChild } from "typescript";
+// import {ScrollTrigger} from "gsap/ScrollTrigger";
+// gsap.registerPlugin(ScrollTrigger);
 
 type NavbarProps = {};
 
@@ -13,6 +19,46 @@ const Navbar: React.FC<NavbarProps> = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const navigate = useNavigate();
+
+  // const navTl = gsap.timeline();
+  useGSAP(()=> {
+    gsap.from(".nav-home",{
+      y: -200,
+      duration: 0.5,
+      ease: "circ",
+      delay: 0.3,
+    });
+    gsap.from(".nav-about",{
+      y: -200,
+      duration: 0.5,
+      ease: "circ",
+      delay: 0.45,
+    });
+    gsap.from(".nav-service",{
+      y: -200,
+      duration: 0.5,
+      ease: "circ",
+      delay: 0.55,
+    });
+    gsap.from(".nav-contact",{
+      y: -200,
+      duration: 0.5,
+      ease: "circ",
+      delay: 0.65,
+    });
+    gsap.from(".nav-portfolio",{
+      y: -200,
+      duration: 0.5,
+      ease: "circ",
+      delay: 0.75,
+    });
+    gsap.from(".nav-blog",{
+      y: -200,
+      duration: 0.5,
+      ease: "circ",
+      delay: 0.85,
+    });
+  })
 
   return (
     <div className="navbar">
@@ -43,7 +89,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           </div>
 
           <div
-            className={`nav-element ${activeTab === "home" ? "active" : ""}`}
+            className={`nav-element nav-home ${activeTab === "home" ? "active" : ""}`}
             onClick={() => {
               setActiveTab("home");
               navigate("/");
@@ -54,7 +100,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           </div>
 
           <div
-            className={`nav-element ${
+            className={`nav-element nav-about ${
               activeTab === "about-us" ? "active" : ""
             }`}
             onClick={() => {
@@ -81,7 +127,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           >
             <div className={`nav-elem-wrapper`}>
               <div
-                className={`nav-element ${
+                className={`nav-element nav-service ${
                   activeTab === "services" ? "active" : ""
                 }`}
                 // onClick={() => {
@@ -90,7 +136,7 @@ const Navbar: React.FC<NavbarProps> = () => {
               >
                 Services
               </div>
-              <img className="arrow" src={downArrow} alt="" />
+              <img className="arrow nav-service" src={downArrow} alt="" />
             </div>
 
             <div
@@ -104,7 +150,17 @@ const Navbar: React.FC<NavbarProps> = () => {
                     setActiveTab("services");
                   }}
                 >
-                  Design & Development
+                  Web Development
+                </div>
+                <div
+                  className="title"
+                  onClick={() => {
+                    setOpenMenu(false);
+                    navigate("/appdev");
+                    setActiveTab("services");
+                  }}
+                >
+                  App Development
                 </div>
                 <div
                   className="title"
@@ -114,7 +170,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                     setActiveTab("services");
                   }}
                 >
-                  Bramd Marketing
+                  Brand Marketing
                 </div>
                 <div
                   className="title"
@@ -141,7 +197,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           </div>
 
           <div
-            className={`nav-element ${
+            className={`nav-element nav-contact ${
               activeTab === "contact-us" ? "active" : ""
             }`}
             onClick={() => {
@@ -152,7 +208,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             Contact Us
           </div>
           <div
-            className={`nav-element ${
+            className={`nav-element nav-portfolio ${
               activeTab === "portfolio" ? "active" : ""
             }`}
             onClick={() => {
@@ -163,7 +219,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             Portfolio
           </div>
           <div
-            className={`nav-element ${activeTab === "blog" ? "active" : ""}`}
+            className={`nav-element nav-blog ${activeTab === "blog" ? "active" : ""}`}
             onClick={() => {
               setActiveTab("blog");
               setOpenMenu(false);

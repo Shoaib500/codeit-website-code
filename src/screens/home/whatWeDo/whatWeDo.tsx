@@ -1,6 +1,6 @@
 import whatWeDo from "../../../assets/images/whatwedo.avif";
 import "./whatWeDo.scss";
-import { easeIn, easeInOut } from "framer-motion";
+// import { easeIn, easeInOut } from "framer-motion";
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -10,53 +10,55 @@ gsap.registerPlugin(ScrollTrigger);
 type WhatWeDoProps = {};
 
 const WhatWeDo: React.FC<WhatWeDoProps> = () => {
-
   const wwdAniRef = useRef(null);
   const wwdImgRef = useRef(null);
   const wwdContRef = useRef(null);
-  useGSAP(()=>{
-      gsap.from(wwdAniRef.current,{
-        y: 200,
-        duration: 0.2,
-        transition: easeInOut,
-        opacity: 0,
+  useGSAP(() => {
+    gsap.from(wwdAniRef.current, {
+      y: 150,
+      duration: 0.8,
+      opacity: 0.25,
+      ease: "back",
 
-        scrollTrigger:{
-          trigger: wwdAniRef.current,
-          scroller: "body",
-          markers: false,
-          start: "top 75%",
-          end: "top 75%",
-        }
-      })
-      gsap.from(wwdImgRef.current,{
-        x: 200,
-        duration: 0.3,
-        opacity: 0,
-        transition: easeInOut,
-        // delay: 3,
+      scrollTrigger: {
+        trigger: wwdAniRef.current,
+        scroller: "body",
+        markers: false,
+        start: "top 80%",
+        end: "top 30%",
+        scrub: 1,
+      },
+    });
+    gsap.from(wwdImgRef.current, {
+      x: 200,
+      duration: 0.8,
+      opacity: 0.25,
+      ease: "circ",
 
-        scrollTrigger:{
-          trigger: wwdAniRef.current,
-          // scroller: "body",
-          // markers: false,
-          start: "top 75%",
-        }
-      });
-      gsap.from(wwdContRef.current,{
-        x: -200,
-        duration: 0.3,
-        opacity: 0,
-        transition: easeInOut,
-        // delay: 3,
+      scrollTrigger: {
+        trigger: wwdAniRef.current,
+        // scroller: "body",
+        // markers: false,
+        start: "top 80%",
+        end: "top 30%",
+        scrub: 1,
+      },
+    });
+    gsap.from(wwdContRef.current, {
+      x: -200,
+      duration: 0.8,
+      opacity: 0.25,
+      ease: "circ",
 
-        scrollTrigger:{
-          trigger: wwdAniRef.current,
-          // scroller: "body",
-          // markers: false,
-          start: "top 75%",
-        }
-      });
+      scrollTrigger: {
+        trigger: wwdAniRef.current,
+        // scroller: "body",
+        // markers: false,
+        start: "top 80%",
+        end: "top 30%",
+        scrub: 1,
+      },
+    });
   });
 
   return (

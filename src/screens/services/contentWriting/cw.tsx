@@ -1,9 +1,10 @@
 import React from "react";
-
+import DirectLink from "../../../components/directLink/directLink";
 import "./cw.scss";
 
 const cw = () => {
   return (
+    <>
     <div className="cw">
       <section className="heroBanner cwBgBanner">
         <div className="container-xxl heroTopDiv">
@@ -150,6 +151,9 @@ const cw = () => {
         </div>
       </div>
     </div>
+
+    <DirectLink />
+    </>
   );
 };
 
