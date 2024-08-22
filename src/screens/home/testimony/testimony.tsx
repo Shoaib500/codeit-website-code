@@ -1,11 +1,11 @@
 import React from "react";
 import "./testimony.scss";
 import star from "../../../assets/icons/star-solid.svg";
-import client1 from "../../../assets/testimony-img/red-logo.webp";
-import client2 from "../../../assets/testimony-img/Logo-07.webp";
-import client3 from "../../../assets/testimony-img/TimeOut_Logo-01-1.png";
-import client4 from "../../../assets/testimony-img/linda-paradise-logo.png";
-import client5 from "../../../assets/testimony-img/tvgconsultancy-new.png";
+import client1 from "../../../assets/testimony-img/cowrks.gif";
+import client2 from "../../../assets/testimony-img/myTokri.gif";
+import client3 from "../../../assets/testimony-img/marathon.gif";
+import client4 from "../../../assets/testimony-img/hyperVerge.gif";
+import client5 from "../../../assets/testimony-img/omkar.gif";
 
 type TestimonyProps = {};
 
@@ -19,33 +19,33 @@ const Testimony: React.FC<TestimonyProps> = () => {
   const testimonials: Testimonial[] = [
     {
       img: client1,
-      name: "ABH",
+      name: "Cowrks",
       description:
-        "Mighty Warner's web development services exceeded all expectations. Their team of skilled developers crafted a stunning and user-friendly website for us. From start to finish, the process was smooth and efficient.",
+        "Codeit web development services exceeded all expectations. Their team of skilled developers crafted a stunning and user-friendly website for us. From start to finish, the process was smooth and efficient.",
     },
     {
       img: client2,
-      name: "Classic Educational",
+      name: "MyTokri",
       description:
         "Highly impressed with their PPC and SMM services! They've significantly enhanced our online visibility and brand awareness. The outstanding results speak volumes, with a remarkable boost in website traffic .",
     },
     {
       img: client3,
-      name: "Mr. Sam(Time-out)",
+      name: "Marathon Group",
       description:
         "My Instagram page had just a few followers and engagements when I approached Mighty Warner's social media team. Today, I have gained ample followers and leads from Instagram with their efforts.",
     },
     {
       img: client4,
-      name: "Linda Paradis",
+      name: "Hyper Verge",
       description:
-        "I am glad that I connected with the experts at Mighty Warner to develop a website for my Tattoo removal academy. All the layouts and designs are just amazing.",
+        "I am glad that I connected with the experts at Codeit to develop a website for my Tattoo removal academy. All the layouts and designs are just amazing.",
     },
     {
       img: client5,
-      name: "Mr. Aman(TVG)",
+      name: "Omkar Realtors",
       description:
-        "The social media experts at Mighty Warner are really trendy when it comes to posts. I just loved the way they planned the calendar for our Instagram page.",
+        "The social media experts at Codeit are really trendy when it comes to posts. I just loved the way they planned the calendar for our Instagram page.",
     },
   ];
 

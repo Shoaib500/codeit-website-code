@@ -1,7 +1,7 @@
 .testimony-container {
     // background-color: #f7f7f7;
     margin: 20px 0;
-    width: 100%;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,7 @@
       --size-3: 5%;
       max-width: 1300px;
       max-height: 500px;
-      padding: 50px;
+      padding: 50px 2px;
       display: grid;
       gap: var(--size-3);
       grid-auto-flow: column;
@@ -44,7 +44,7 @@
       // justify-content: center;
   
       overflow-x: auto;
-      overscroll-behavior-inline: contain;
+      // overscroll-behavior-inline: contain;
       scroll-behavior: smooth;
   
       .testimonial-card {

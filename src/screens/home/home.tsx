@@ -6,7 +6,7 @@ import WhoWeAre from "./whoWeAre/whoWeAre";
 import WhatWeDo from "./whatWeDo/whatWeDo";
 import WhyChooseUs from "./whyChooseUs/whyChooseUs";
 import MeetOurClients from "./meetOurClients/meetOurClients";
-// import Testimony from "./testimony/testimony";
+import Testimony from "./testimony/testimony";
 import DirectLink from "../../components/directLink/directLink";
 // import { easeIn, easeInOut } from "framer-motion";
 import React, { useRef, useEffect } from "react";
@@ -74,7 +74,7 @@ const Home: React.FC<HomeProps> = () => {
 
       <DirectLink />
 
-      {/* <Testimony /> */}
+      <Testimony />
 
     </div>
   );
